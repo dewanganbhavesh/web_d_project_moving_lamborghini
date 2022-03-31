@@ -75,8 +75,8 @@ body{
     position: absolute;
     height: 6.2vh;
     width: inherit;
-    top: 4.8vh;
-    left: 24.8vh;
+    top: 4.6vh;
+    left: 23.2vh;
     animation: rotate-wheels 0.5s linear infinite;
 }
 
@@ -84,8 +84,8 @@ body{
     position: absolute;
     height: 8vh;
     width: inherit;
-    top: 4vh;
-    left: 4.25vh;
+    top: 3.6vh;
+    left: 3.7vh;
     animation: rotate-wheels linear infinite;
     animation-duration: 0.5s;
 }
