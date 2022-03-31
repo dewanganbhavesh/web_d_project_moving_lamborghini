@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Car</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sky"></div>
+        <div class="trees"></div>
+        <div id="track"></div>
+        <div class="car">
+            <div><img src="car_wheel_left.png" alt="" id="first-wheel"></div>
+            <div><img src="car_wheel_right.png" alt="" id="second-wheel"></div>
+        </div>
+        <div class="speed-control">
+            <button id="slow" class="btn" onclick="slow()">Slow</button>
+            <button id="normal" class="btn" onclick="normal()">Normal</button>
+            <button id="fast" class="btn" onclick="fast()">Fast</button>
+        </div>
+        <!-- <div id="sun"></div> -->
+    </div>
+</body>
+</html>

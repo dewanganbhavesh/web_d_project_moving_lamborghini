@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.sky{
+    background-image: url(background.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0vh;
+    /* animation: move-back 360s linear infinite; */
+    animation: night 60s linear infinite;
+}
+
+.trees{
+    background-image: url(trees.png);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 8vh;
+    /* animation: move-back 180s linear infinite; */
+    animation: night 60s linear infinite;
+}
+
+/* #sun{
+    background-color: orange;
+    position: absolute;
+    height: 8vw;
+    width: 8vw;
+    border-radius: 50%;
+    z-index: 0;
+    animation: sun 15s linear infinite;
+} */
+
+#track{
+    background-image: url(track.png);
+    height: 20vh;
+    width: 1000vw;
+    background-repeat: repeat-x;
+    /* background-size: cover; */
+    position: absolute;
+    bottom: 0vh;
+    animation: move-back 15s linear infinite;
+    /* display: none; */
+}
+
+.car{
+    background-image: url(car_body.png);
+    height: 24vh;
+    width: 24vw;
+    background-repeat: no-repeat;
+    background-size: 76%;
+    position: absolute;
+    top: 72vh;
+    left: 48vh;
+    animation: night 60s linear infinite;
+}
+
+#first-wheel{
+    position: absolute;
+    height: 6.2vh;
+    width: inherit;
+    top: 4.8vh;
+    left: 24.8vh;
+    animation: rotate-wheels 0.5s linear infinite;
+}
+
+#second-wheel{
+    position: absolute;
+    height: 8vh;
+    width: inherit;
+    top: 4vh;
+    left: 4.25vh;
+    animation: rotate-wheels linear infinite;
+    animation-duration: 0.5s;
+}
+
+@keyframes rotate-wheels {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move-back {
+    100%{
+        transform: translateX(-800vw);
+    }
+}
+
+@keyframes night {
+    0%{
+        filter: brightness(1);
+    }
+    50%{
+        filter: brightness(0.3);
+    }
+    100%{
+        filter: brightness(1);
+    }
+}
+
+/* @keyframes sun {
+    0%{
+        top: 70vh;
+        left: 100vw;
+        background-color: orangered;
+    }
+    35%{
+        top: 20vh;
+        left: 75vw;
+    }
+
+    50%{
+        top: 10vh;
+        background-color: rgb(255, 230, 0);
+
+    }
+    65%{
+        top: 20vh;
+        left: 25vw;
+    }
+
+    100%{
+        top: 70vh;
+        left: 0vw;
+        background-color: orangered;
+    }
+} */
+
+.speed-control{
+    position: absolute;
+    top: 16vh;
+    left: 72vw;
+    width: 24vw;
+}
+
+.btn{
+    cursor: pointer;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 12px;
+    width: 12vh;
+    height: 4vh;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 12px 1vw;
+}
+
+#slow{
+    background-color: blue;
+}
+
+#normal{
+    background-color: green;
+}
+
+#fast{
+    background-color: red;
+}
